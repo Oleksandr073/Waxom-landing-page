@@ -2,12 +2,13 @@
 const filterButtons = document.querySelectorAll('.projects__radio');
 const projectsCards = document.querySelectorAll('.projects__card');
 const loadButton = document.querySelector('.projects__button');
+let visibleCardsAmount = 6;
 
 function hideCards(cards) { // hides all cards after the 6th card
-    for (let i = 6; i < cards.length; i++) {
+    for (let i = visibleCardsAmount; i < cards.length; i++) {
         cards[i].classList.add('projects__card--hide');
     }
-    if (cards.length <= 6) {
+    if (cards.length <= visibleCardsAmount) {
         loadButton.classList.add('projects__button--hide');
         document.querySelector('.projects__cards').style.marginBottom = '0';
     } else {
@@ -19,9 +20,7 @@ function hideCards(cards) { // hides all cards after the 6th card
 hideCards(projectsCards);
 
 function showCards(cards) { // shows all cards
-    for (let i = 0; i < cards.length; i++) {
-        cards[i].classList.remove('projects__card--hide');
-    }
+    cards.forEach(card => card.classList.remove('projects__card--hide'));
 }
 
 function filteredCards(allCards, activeFilter) { // returns the cards according to the selected filter
@@ -78,7 +77,7 @@ cards.forEach(card => card.addEventListener('focus', () => {
 }));
 
 // swiper slider posts
-const slidesAmount = 3;
+let slidesAmount = 3;
 
 const postsSwiper = new Swiper('.posts__container', {
     simulateTouch: false,
@@ -154,3 +153,6 @@ video.addEventListener('timeupdate', () => {
 progress.addEventListener('change', () => {
     video.currentTime = (progress.value * video.duration) / 100;
 });
+
+// mobile accordion
+
