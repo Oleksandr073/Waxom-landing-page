@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waxom</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- swiper styles -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- common styles -->
+    <!-- <link rel="stylesheet" href="./css/range.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- header -->
+<header class="header">
+    <div class="header__container container">
+        <nav class="header__nav nav">
+            <a href="" class="nav__logo logo">
+                <svg>
+                    <use xlink:href="svg/sprite.svg#logo"></use>
+                </svg>
+                <span>Waxom</span>
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="" class="nav__link nav-link--active">About Us</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Features</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Shortcodes</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="header__icons">
+            <li class="header__icon-items">
+                <a class="header__icon-link" href="" aria-label="Cart">
+                    <svg>
+                        <use xlink:href="svg/sprite.svg#cart"></use>
+                    </svg>
+                    <span class="visually-hidden">Cart</span>
+                </a>
+            </li>
+            <li class="header__icon-items">
+                <a class="header__icon-link" href="" aria-label="Search">
+                    <svg>
+                        <use xlink:href="svg/sprite.svg#search"></use>
+                    </svg>
+                    <span class="visually-hidden">Search</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- main -->
+<main class="main"> 
+    <!-- hero -->
+    <section class="hero">
+        <div class="hero__container container">
+            <p class="hero__suptitle">Unique and Modern Design</p>
+            <h1 class="hero__title">Portfolio PSD Template</h1>
+            <p class="hero__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
+            assum.</p>
+            <button class="hero__button btn" type="button">Get Started</button>
+        </div>
+    </section>
+
+    <!-- advantages -->
+    <section class="advantages section">
+        <div class="advantages__container container">
+            <h2 class="visually-hidden">Advantages</h2>
+            <ul class="advantages__items">
+                <li class="advantages__item">
+                    <svg class="advantages__icon">
+                        <use xlink:href="svg/sprite.svg#pencil"></use>
+                    </svg>
+                    <h3 class="advantages__title">Web & App Design</h3>
+                    <p class="advantages__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                </li>
+                <li class="advantages__item advantages__item--active">
+                    <svg class="advantages__icon">
+                        <use xlink:href="svg/sprite.svg#sheets"></use>
+                    </svg>
+                    <h3 class="advantages__title">Development</h3>
+                    <p class="advantages__text">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                </li>
+                <li class="advantages__item">
+                    <svg class="advantages__icon">
+                        <use xlink:href="svg/sprite.svg#options"></use>
+                    </svg>
+                    <h3 class="advantages__title">Customization</h3>
+                    <p class="advantages__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                </li>
+                <li class="advantages__item">
+                    <svg class="advantages__icon">
+                        <use xlink:href="svg/sprite.svg#folder"></use>
+                    </svg>
+                    <h3 class="advantages__title">Marketing</h3>
+                    <p class="advantages__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ideas -->
+    <section class="ideas section">
+        <div class="ideas__container container">
+            <h2 class="ideas__title title">Waxom is Realization of your Ideas.</h2>
+            <p class="ideas__subtitle subtitle">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+            qui sequitur mutationem consuetudium.</p>
+            <div class="ideas__photos"> <!-- ul>li*3 ??? -->
+                <img class="ideas__photo ideas__photo--left" src="./img/ideas/left.jpg" width="770" height="400" alt="our website in your browser">
+                <img class="ideas__photo" src="./img/ideas/center.jpg" width="770" height="482" alt="our website in your browser">
+                <img class="ideas__photo ideas__photo--right" src="./img/ideas/right.jpg" width="770" height="400" alt="our website in your browser">
+            </div>
+        </div>
+        <div class="ideas__purchase">
+            <div class="ideas__purchase-container container">
+                <div class="ideas__purchase-info">
+                    <h3 class="ideas__purchase-title"><span>Waxom</span> Multipurpose WordPress Theme</h3>
+                    <p class="ideas__purchase-subtitle">Don't Forget to Rate the Template. Thanks so much!</p>
+                </div>
+                <button class="ideas__purchase-button btn" type="button">Purchase Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section class="projects section">
+        <div class="projects__container container">
+            <h2 class="projects__title title">Our Latest Projects.</h2>
+            <p class="projects__subtitle subtitle">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+            qui sequitur mutationem consuetudium.</p>
+            <ul class="projects__categories">
+                <li class="projects__category">
+                    <button class="projects__tab" type="button">All</button>
+                </li>
+                <li class="projects__category">
+                    <button class="projects__tab" type="button">Web Design</button>
+                </li>
+                <li class="projects__category">
+                    <button class="projects__tab" type="button">Mobile App</button>
+                </li>
+                <li class="projects__category">
+                    <button class="projects__tab" type="button">Illustration</button>
+                </li>
+                <li class="projects__category">
+                    <button class="projects__tab" type="button">Photography</button>
+                </li>
+            </ul>
+            <ul class="projects__cards">
+                <li class="projects__card" tabindex="0">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-1.jpg" height="240" alt="smartphone">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Claritas Etiam Processus</h3>
+                        <p class="projects__subheading">Photography, Nature</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-2.jpg" height="240" alt="mountains">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Quam Nutamus Farum</h3>
+                        <p class="projects__subheading">Graphic Design, Mock-Up</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Photography, Holiday</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-4.jpg" height="240" alt="birds">
+                       <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Claritas Etiam Processus</h3>
+                        <p class="projects__subheading">Photography, Nature</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-5.jpg" height="240" alt="magazine">
+                       <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Quam Nutamus Farum</h3>
+                        <p class="projects__subheading">Graphic Design, Mock-Up</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-6.jpg" height="240" alt="sea">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Photography, Holiday</p>
+                    </div>
+                </li>
+            </ul>
+            <button class="projects__button btn" type="button">Load More</button>
+        </div>
+    </section>
+
+    <!-- presentation -->
+    <section class="presentation">
+
+        <div class="presentation__container">
+            <button class="presentation__play">
+                <svg>
+                    <use xlink:href="svg/sprite.svg#video"></use>
+                </svg>
+            </button>
+            <h2 class="presentation__title title">Waxom Video Presentation</h2>
+            <p class="presentation__subtitle subtitle">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+            <p class="presentation__duration">03:26</p>
+        </div>
+
+        <div class="presentation__video videoplayer">
+            <video class="videoplayer__video" poster="./img/presentation/video-1.jpg">
+                <source src="./video/video.mp4">
+                <source src="./video/presntation.mp4">
+            </video>
+
+            <div class="videoplayer__controls videoplayer__controls--hidden">
+                <button class="videoplayer__play">
+                    <svg class="play">
+                        <use xlink:href="svg/sprite.svg#play"></use>
+                    </svg>
+                    <!-- <svg class="pause">
+                        <use xlink:href="svg/sprite.svg#pause"></use>
+                    </svg> -->
+                </button>
+                <button class="videoplayer__stop">
+                    <svg class="stop">
+                        <use xlink:href="svg/sprite.svg#stop"></use>
+                    </svg>
+                </button>
+                <div class="videoplayer__progress">
+                    <input class="progress" type="range" value="0">
+                </div>
+                <div class="videoplayer__time">00:00</div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- mobile -->
+    <section class="mobile">
+        <div class="mobile__container container">
+            <h2 class="mobile__title">Excellent for Mobile Devices.</h2>
+            <p class="mobile__text subtitle">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+            <ul class="mobile__advantages">
+                <li class="mobile__advantage">Nam liber tempor cum soluta nobis eleifend option;</li>
+                <li class="mobile__advantage">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                <li class="mobile__advantage">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                <li class="mobile__advantage">Investigationes demonstraverunt lectores</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- statistics -->
+    <section class="statistics">
+        <div class="statistics__container container">
+            <h2 class="visually-hidden">Statistics</h2>
+            <ul class="statistics__items">
+                <li class="statistics__item">
+                    <svg class="statistics__icon">
+                        <use xlink:href="svg/sprite.svg#clients"></use>
+                    </svg>
+                    <p class="statistics__value">3587</p>
+                    <p class="statistics__caption">Satisfied Clients</p>
+                </li>
+                <li class="statistics__item">
+                    <svg class="statistics__icon">
+                        <use xlink:href="svg/sprite.svg#coffee"></use>
+                    </svg>
+                    <p class="statistics__value">207</p>
+                    <p class="statistics__caption">Cups of coffee</p>
+                </li>
+                <li class="statistics__item">
+                    <svg class="statistics__icon">
+                        <use xlink:href="svg/sprite.svg#comment"></use>
+                    </svg>
+                    <p class="statistics__value">2500</p>
+                    <p class="statistics__caption">Blog posts</p>
+                </li>
+                <li class="statistics__item">
+                    <svg class="statistics__icon">
+                        <use xlink:href="svg/sprite.svg#heart"></use>
+                    </svg>
+                    <p class="statistics__value">873</p>
+                    <p class="statistics__caption">likes</p>
+                </li>
+                <li class="statistics__item">
+                    <svg class="statistics__icon">
+                        <use xlink:href="svg/sprite.svg#bell"></use>
+                    </svg>
+                    <p class="statistics__value">900</p>
+                    <p class="statistics__caption">we launched</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- posts -->
+    <section class="posts section">
+        <div class="posts__container container  swiper">
+            <h2 class="posts__title title">Recent Posts.</h2>
+            <p class="posts__subtitle subtitle">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            <ul class="posts__cards  swiper-wrapper">
+                <li class="posts__card  swiper-slide">
+                    <div class="posts__wrapper">
+                        <img class="posts__photo" src="./img/posts/posts-1.jpg" height="220" alt="shoes">
+                        <time class="posts__date date" datetime="2022-09-30">
+                            <span class="date__day">30</span>
+                            <span class="date__month">Sep.</span>
+                        </time>
+                    </div>
+                    <div class="posts__info">
+                        <h3 class="posts__heading">Lorem ipsum dolor sit amet</h3>
+                        <p class="posts__subheading">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a class="posts__read" href="" target="_blank" rel="noreferrer noopener">Read More</a>
+                    </div>
+                </li>
+                <li class="posts__card  swiper-slide">
+                    <div class="posts__wrapper">
+                        <img class="posts__photo" src="./img/posts/posts-2.jpg" height="220" alt="notebook">
+                        <time class="posts__date date" datetime="2022-09-30">
+                            <span class="date__day">30</span>
+                            <span class="date__month">Sep.</span>
+                        </time>
+                    </div>
+                    <div class="posts__info">
+                        <h3 class="posts__heading">Lorem ipsum dolor sit amet</h3>
+                        <p class="posts__subheading">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a class="posts__read" href="" target="_blank" rel="noreferrer noopener">Read More</a>
+                    </div>
+                </li>
+                <li class="posts__card  swiper-slide">
+                    <div class="posts__wrapper">
+                        <img class="posts__photo" src="./img/posts/posts-3.jpg" height="220" alt="cruise ship">
+                        <time class="posts__date date" datetime="2022-09-30">
+                            <span class="date__day">30</span>
+                            <span class="date__month">Sep.</span>
+                        </time>
+                    </div>
+                    <div class="posts__info">
+                        <h3 class="posts__heading">Lorem ipsum dolor sit amet</h3>
+                        <p class="posts__subheading">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a class="posts__read" href="" target="_blank" rel="noreferrer noopener">Read More</a>
+                    </div>
+                </li>
+                <li class="posts__card  swiper-slide">
+                    <div class="posts__wrapper">
+                        <img class="posts__photo" src="./img/posts/posts-3.jpg" height="220" alt="cruise ship">
+                        <time class="posts__date date" datetime="2022-09-30">
+                            <span class="date__day">30</span>
+                            <span class="date__month">Sep.</span>
+                        </time>
+                    </div>
+                    <div class="posts__info">
+                        <h3 class="posts__heading">Lorem ipsum dolor sit amet</h3>
+                        <p class="posts__subheading">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a class="posts__read" href="" target="_blank" rel="noreferrer noopener">Read More</a>
+                    </div>
+                </li>
+                <li class="posts__card  swiper-slide">
+                    <div class="posts__wrapper">
+                        <img class="posts__photo" src="./img/posts/posts-2.jpg" height="220" alt="notebook">
+                        <time class="posts__date date" datetime="2022-09-30">
+                            <span class="date__day">30</span>
+                            <span class="date__month">Sep.</span>
+                        </time>
+                    </div>
+                    <div class="posts__info">
+                        <h3 class="posts__heading">Lorem ipsum dolor sit amet</h3>
+                        <p class="posts__subheading">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a class="posts__read" href="" target="_blank" rel="noreferrer noopener">Read More</a>
+                    </div>
+                </li>
+                <li class="posts__card  swiper-slide">
+                    <div class="posts__wrapper">
+                        <img class="posts__photo" src="./img/posts/posts-3.jpg" height="220" alt="cruise ship">
+                        <time class="posts__date date" datetime="2022-09-30">
+                            <span class="date__day">30</span>
+                            <span class="date__month">Sep.</span>
+                        </time>
+                    </div>
+                    <div class="posts__info">
+                        <h3 class="posts__heading">Lorem ipsum dolor sit amet</h3>
+                        <p class="posts__subheading">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a class="posts__read" href="" target="_blank" rel="noreferrer noopener">Read More</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="posts__btns">
+                <button class="posts__btn posts__btn--left" type="button"></button>
+                <button class="posts__btn posts__btn--right" type="button"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- logos -->
+    <section class="logos">
+        <div class="logos__container container">
+            <h2 class="visually-hidden">Logos</h2>
+            <ul class="logos__items">
+                <li class="logos__item">
+                    <a class="logos__link" href="" target="_blank" rel="noreferrer noopener">
+                        <img class="logos__logo" src="./img/logos/logo-1.png" width="210" alt="company logo">
+                    </a>
+                </li>
+                <li class="logos__item">
+                    <a class="logos__link" href="" target="_blank" rel="noreferrer noopener">
+                        <img class="logos__logo" src="./img/logos/logo-2.png" width="210" alt="company logo">
+                    </a>
+                </li>
+                <li class="logos__item">
+                    <a class="logos__link" href="" target="_blank" rel="noreferrer noopener">
+                        <img class="logos__icon" src="./img/logos/logo-3.png" width="210" alt="company logo">
+                    </a>
+                </li>
+                <li class="logos__item">
+                    <a class="logos__link" href="" target="_blank" rel="noreferrer noopener">
+                        <img class="logos__logo" src="./img/logos/logo-4.png" width="210" alt="company logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- contacts -->
+    <section class="contacts">
+        <div class="contacts__container container">
+            <!-- <h2 class="visually-hidden">Contacts</h2> -->
+        </div>
+    </section>
+</main>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__container container">
+        
+    </div>
+</footer>
+
+
+<!-- swiper script -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!-- common script -->
+<script src="js/script.js"></script>
+</body>
+
+</html>
