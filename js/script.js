@@ -1,5 +1,5 @@
 // projects cards filter
-const filterButtons = document.querySelectorAll('.projects__tab');
+const filterButtons = document.querySelectorAll('.projects__radio');
 const projectsCards = document.querySelectorAll('.projects__card');
 const loadButton = document.querySelector('.projects__button');
 
@@ -9,8 +9,10 @@ function hideCards(cards) { // hides all cards after the 6th card
     }
     if (cards.length <= 6) {
         loadButton.classList.add('projects__button--hide');
+        document.querySelector('.projects__cards').style.marginBottom = '0';
     } else {
         loadButton.classList.remove('projects__button--hide');
+        document.querySelector('.projects__cards').style.marginBottom = '40px';
     }
 }
 
@@ -38,14 +40,13 @@ loadButton.addEventListener('click', function () { // load button shows all card
     if (this.innerHTML == 'Load More') {
         showCards(cards);
         this.innerHTML = 'Show Less';
-    }
-    else if (this.innerHTML == 'Show Less') {
+    } else {
         hideCards(cards);
         this.innerHTML = 'Load More';
     }
 })
 
-document.querySelectorAll('.projects__radio').forEach(filterButton => { // filter buttons that show up to 6 cards according to the selected filter
+filterButtons.forEach(filterButton => { // filter buttons that show up to 6 cards according to the selected filter
     filterButton.addEventListener('change', function () {
         if (this.checked) {
             projectsCards.forEach(card => card.classList.add('projects__card--hide'));
