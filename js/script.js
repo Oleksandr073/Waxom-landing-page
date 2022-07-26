@@ -1,9 +1,61 @@
 // projects cards filter
+const filterButtons = document.querySelectorAll('.projects__tab');
+const projectsCards = document.querySelectorAll('.projects__card');
+const loadButton = document.querySelector('.projects__button');
 
+function hideCards(cards) { // hides all cards after the 6th card
+    for (let i = 6; i < cards.length; i++) {
+        cards[i].classList.add('projects__card--hide');
+    }
+    if (cards.length <= 6) {
+        loadButton.classList.add('projects__button--hide');
+    } else {
+        loadButton.classList.remove('projects__button--hide');
+    }
+}
 
+hideCards(projectsCards);
 
+function showCards(cards) { // shows all cards
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.remove('projects__card--hide');
+    }
+}
 
+function filteredCards(allCards, activeFilter) { // returns the cards according to the selected filter
+    let filteredCards = allCards;
+    if (activeFilter != 'All') {
+        filteredCards = Array.from(allCards)
+            .filter(card => card.dataset.category == activeFilter);
+    }
+    return filteredCards;
+}
 
+loadButton.addEventListener('click', function () { // load button shows all cards or hides all cards after the 6th according to the selected filter
+    const activeFilter = document.querySelector('.projects__radio:checked + .projects__tab').dataset.filter;
+    const cards = filteredCards(projectsCards, activeFilter);
+
+    if (this.innerHTML == 'Load More') {
+        showCards(cards);
+        this.innerHTML = 'Show Less';
+    }
+    else if (this.innerHTML == 'Show Less') {
+        hideCards(cards);
+        this.innerHTML = 'Load More';
+    }
+})
+
+filterButtons.forEach(filterButton => { // filter buttons that show up to 6 cards according to the selected filter
+    filterButton.addEventListener('click', function () {
+        projectsCards.forEach(card => card.classList.add('projects__card--hide'));
+
+        const activeFilter = this.dataset.filter;
+        const cards = filteredCards(projectsCards, activeFilter);
+
+        showCards(cards);
+        hideCards(cards);
+    })
+})
 
 // projects cards focus
 const links = document.querySelectorAll('.projects__link');
@@ -41,7 +93,7 @@ const btnRight = document.querySelector('.posts__btn--right');
 
 btnRight.classList.add('posts__btn--active');
 
-postsSwiper.on('slideChange', function () {
+postsSwiper.on('slideChange', function() {
     btnLeft.classList.add('posts__btn--active');
     btnRight.classList.add('posts__btn--active');
     if (this.activeIndex == 0) btnLeft.classList.remove('posts__btn--active');
@@ -60,13 +112,13 @@ const time = document.querySelector('.videoplayer__time');
 
     // play & pause video
 
-bigPlayBtn.addEventListener('click', function () {
+bigPlayBtn.addEventListener('click', () => {
     video.play();
     presentationContainer.classList.add('presentation__container--hidden');
     videoplayerControls.classList.remove('videoplayer__controls--hidden');
 });
 
-playBtn.addEventListener('click', function () {
+playBtn.addEventListener('click', () => {
     if (video.paused) {
         video.play();
     } else {
@@ -87,7 +139,7 @@ video.addEventListener('ended', stopVideo);
 
     // timer
 
-video.addEventListener('timeupdate', function () {
+video.addEventListener('timeupdate', () => {
     progress.value = (video.currentTime / video.duration) * 100;
     let minutes = Math.floor(video.currentTime / 60);
     let seconds = Math.floor(video.currentTime % 60);
@@ -96,6 +148,6 @@ video.addEventListener('timeupdate', function () {
 
     // set progress
 
-progress.addEventListener('change', function () {
+progress.addEventListener('change', () => {
     video.currentTime = (progress.value * video.duration) / 100;
 });

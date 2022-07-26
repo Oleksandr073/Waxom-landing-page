@@ -140,23 +140,38 @@
             qui sequitur mutationem consuetudium.</p>
             <ul class="projects__categories">
                 <li class="projects__category">
-                    <button class="projects__tab" type="button">All</button>
+                    <input class="projects__radio" type="radio" name="filter" id="all" checked>
+                    <label class="projects__tab" data-filter="All" for="all">
+                        All
+                    </label>
                 </li>
                 <li class="projects__category">
-                    <button class="projects__tab" type="button">Web Design</button>
+                    <input class="projects__radio" type="radio" name="filter" id="web">
+                    <label class="projects__tab" data-filter="Web" for="web">
+                        Web Design
+                    </label>
                 </li>
                 <li class="projects__category">
-                    <button class="projects__tab" type="button">Mobile App</button>
+                    <input class="projects__radio" type="radio" name="filter" id="mobile">
+                    <label class="projects__tab" data-filter="Mobile" for="mobile">
+                        Mobile App
+                    </label>
                 </li>
                 <li class="projects__category">
-                    <button class="projects__tab" type="button">Illustration</button>
+                    <input class="projects__radio" type="radio" name="filter" id="illustration">
+                    <label class="projects__tab" data-filter="Illustration" for="illustration">
+                        Illustration
+                    </label>
                 </li>
                 <li class="projects__category">
-                    <button class="projects__tab" type="button">Photography</button>
+                    <input class="projects__radio" type="radio" name="filter" id="photography">
+                    <label class="projects__tab" data-filter="Photography" for="photography">
+                        Photography
+                    </label>
                 </li>
             </ul>
             <ul class="projects__cards">
-                <li class="projects__card" tabindex="0">
+                <li class="projects__card" tabindex="0" data-category="Mobile">
                     <div class="projects__wrapper">
                         <img class="projects__photo" src="./img/projects/project-1.jpg" height="240" alt="smartphone">
                         <ul class="projects__link-items">
@@ -180,10 +195,10 @@
                     </div>
                     <div class="projects__info">
                         <h3 class="projects__heading">Claritas Etiam Processus</h3>
-                        <p class="projects__subheading">Photography, Nature</p>
+                        <p class="projects__subheading">Mobile, Mobile</p>
                     </div>
                 </li>
-                <li class="projects__card" tabindex="0">
+                <li class="projects__card" tabindex="0" data-category="Photography">
                     <div class="projects__wrapper">
                         <img class="projects__photo" src="./img/projects/project-2.jpg" height="240" alt="mountains">
                         <ul class="projects__link-items">
@@ -207,10 +222,10 @@
                     </div>
                     <div class="projects__info">
                         <h3 class="projects__heading">Quam Nutamus Farum</h3>
-                        <p class="projects__subheading">Graphic Design, Mock-Up</p>
+                        <p class="projects__subheading">Photography, Photography</p>
                     </div>
                 </li>
-                <li class="projects__card" tabindex="0">
+                <li class="projects__card" tabindex="0" data-category="Web">
                     <div class="projects__wrapper">
                         <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
                         <ul class="projects__link-items">
@@ -234,10 +249,10 @@
                     </div>
                     <div class="projects__info">
                         <h3 class="projects__heading">Usus Legentis Videntur</h3>
-                        <p class="projects__subheading">Photography, Holiday</p>
+                        <p class="projects__subheading">Web, Web</p>
                     </div>
                 </li>
-                <li class="projects__card" tabindex="0">
+                <li class="projects__card" tabindex="0" data-category="Illustration">
                     <div class="projects__wrapper">
                         <img class="projects__photo" src="./img/projects/project-4.jpg" height="240" alt="birds">
                        <ul class="projects__link-items">
@@ -261,10 +276,10 @@
                     </div>
                     <div class="projects__info">
                         <h3 class="projects__heading">Claritas Etiam Processus</h3>
-                        <p class="projects__subheading">Photography, Nature</p>
+                        <p class="projects__subheading">Illustration, Illustration</p>
                     </div>
                 </li>
-                <li class="projects__card" tabindex="0">
+                <li class="projects__card" tabindex="0" data-category="Mobile">
                     <div class="projects__wrapper">
                         <img class="projects__photo" src="./img/projects/project-5.jpg" height="240" alt="magazine">
                        <ul class="projects__link-items">
@@ -288,10 +303,10 @@
                     </div>
                     <div class="projects__info">
                         <h3 class="projects__heading">Quam Nutamus Farum</h3>
-                        <p class="projects__subheading">Graphic Design, Mock-Up</p>
+                        <p class="projects__subheading">Mobile, Mobile</p>
                     </div>
                 </li>
-                <li class="projects__card" tabindex="0">
+                <li class="projects__card" tabindex="0" data-category="Photography">
                     <div class="projects__wrapper">
                         <img class="projects__photo" src="./img/projects/project-6.jpg" height="240" alt="sea">
                         <ul class="projects__link-items">
@@ -315,7 +330,304 @@
                     </div>
                     <div class="projects__info">
                         <h3 class="projects__heading">Usus Legentis Videntur</h3>
-                        <p class="projects__subheading">Photography, Holiday</p>
+                        <p class="projects__subheading">Photography, Photography</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Mobile">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-5.jpg" height="240" alt="magazine">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Quam Nutamus Farum</h3>
+                        <p class="projects__subheading">Mobile, Mobile</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Web">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Web, Web</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Web">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Web, Web</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Photography">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-6.jpg" height="240" alt="sea">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Photography, Photography</p>
+                    </div>
+                </li> 
+                <li class="projects__card" tabindex="0" data-category="Illustration">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-4.jpg" height="240" alt="birds">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Claritas Etiam Processus</h3>
+                        <p class="projects__subheading">Illustration, Illustration</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Web">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Web, Web</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Web">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Web, Web</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Photography">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-6.jpg" height="240" alt="sea">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Photography, Photography</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Illustration">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-4.jpg" height="240" alt="birds">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Claritas Etiam Processus</h3>
+                        <p class="projects__subheading">Illustration, Illustration</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Web">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Web, Web</p>
+                    </div>
+                </li>
+                <li class="projects__card" tabindex="0" data-category="Web">
+                    <div class="projects__wrapper">
+                        <img class="projects__photo" src="./img/projects/project-3.jpg" height="240" alt="book">
+                        <ul class="projects__link-items">
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Link">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#link"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Link</span>
+                                </a>
+                            </li>
+                            <li class="projects__link-item">
+                                <a class="projects__link" href="" target="_blank" rel="noreferrer noopener" aria-label="Lupa">
+                                    <svg class="projects__icon">
+                                        <use xlink:href="svg/sprite.svg#lupa"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Lupa</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects__info">
+                        <h3 class="projects__heading">Usus Legentis Videntur</h3>
+                        <p class="projects__subheading">Web, Web</p>
                     </div>
                 </li>
             </ul>

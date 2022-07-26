@@ -576,14 +576,41 @@ body {
         }
     }
 
+    // .projects__radio
+
+    &__radio {
+        // visually-hidden styles
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+
+        &:checked + .projects__tab {
+            color: $whiteColor;
+            border-color: #998675;
+            background-color: #998675;
+        }
+    }
+
     // .projects__tab
 
     &__tab {
-        padding: 5px 15px;
+        display: inline-block;
+        min-width: 70px;
+        padding: 9px 20px;
 
+        @include fontSizeLineHeight(14px, 14px);
+        font-weight: 300;
+
+        color: $secondaryColor;
         border: 1px solid #ebebeb;
         border-radius: 3px;
-        background: transparent;
 
         cursor: pointer;
 
@@ -637,6 +664,10 @@ body {
                 visibility: visible;
                 opacity: 1;
             }
+        }
+
+        &--hide {
+            display: none;
         }
     }
 
@@ -793,7 +824,12 @@ body {
 
     // .projects__button
 
-    &__button {}
+    &__button {
+
+        &--hide {
+            display: none;
+        }
+    }
 }
 
 /* presentation */
