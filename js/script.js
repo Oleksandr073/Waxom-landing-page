@@ -32,7 +32,7 @@ function filteredCards(allCards, activeFilter) { // returns the cards according 
 }
 
 loadButton.addEventListener('click', function () { // load button shows all cards or hides all cards after the 6th according to the selected filter
-    const activeFilter = document.querySelector('.projects__radio:checked + .projects__tab').dataset.filter;
+    const activeFilter = document.querySelector('.projects__radio:checked').dataset.filter;
     const cards = filteredCards(projectsCards, activeFilter);
 
     if (this.innerHTML == 'Load More') {
@@ -45,15 +45,17 @@ loadButton.addEventListener('click', function () { // load button shows all card
     }
 })
 
-filterButtons.forEach(filterButton => { // filter buttons that show up to 6 cards according to the selected filter
-    filterButton.addEventListener('click', function () {
-        projectsCards.forEach(card => card.classList.add('projects__card--hide'));
+document.querySelectorAll('.projects__radio').forEach(filterButton => { // filter buttons that show up to 6 cards according to the selected filter
+    filterButton.addEventListener('change', function () {
+        if (this.checked) {
+            projectsCards.forEach(card => card.classList.add('projects__card--hide'));
 
-        const activeFilter = this.dataset.filter;
-        const cards = filteredCards(projectsCards, activeFilter);
+            const activeFilter = this.dataset.filter;
+            const cards = filteredCards(projectsCards, activeFilter);
 
-        showCards(cards);
-        hideCards(cards);
+            showCards(cards);
+            hideCards(cards);
+        }
     })
 })
 
