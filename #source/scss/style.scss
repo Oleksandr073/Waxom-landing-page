@@ -1155,6 +1155,8 @@ body {
     // .mobile__text
 
     &__text {
+        transition: $transitionSlowEase;
+
         overflow: hidden;
 
         position: absolute;
