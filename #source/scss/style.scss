@@ -1102,7 +1102,7 @@ body {
         position: relative;
 
         &:not(:last-child) {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
     }
     
@@ -1119,8 +1119,6 @@ body {
         color: inherit;
         text-align: left;
         //
-
-        margin-bottom: 5px;
 
         position: relative;
         z-index: 2;
@@ -1157,16 +1155,12 @@ body {
     // .mobile__text
 
     &__text {
-        transition: $transitionSlowEase;
-
         overflow: hidden;
 
         position: absolute;
-        bottom: 0;
+        top: 100%;
         left: 0;
         z-index: 1;
-
-        transform: translateY(100%);
 
         p {
             padding: 10px 0;
@@ -1580,7 +1574,8 @@ body {
                 border-color: $accentColor;
             }
 
-            &:hover { 
+            &:hover,
+            &:focus { 
                 
                 svg {
                     fill: $whiteColor;

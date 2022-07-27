@@ -169,12 +169,21 @@ function showContent(button) {
     button.nextElementSibling.setAttribute('aria-hidden', 'false');
 }
 
+function moveButtons(index) {
+    for (let i = 0; i <= index; i++) {
+        accordionButtons[i].style.transform = 'translateY(0)';
+        accordionButtons[i].nextElementSibling.style.transform = 'translateY(0)';
+    }
+    let activeTextHeight = accordionButtons[index].nextElementSibling.getBoundingClientRect().height;
+    for (let i = index + 1; i < accordionButtons.length; i++) {
+        accordionButtons[i].style.transform = `translateY(${activeTextHeight}px)`;
+        accordionButtons[i].nextElementSibling.style.transform = `translateY(${activeTextHeight}px)`;
+    }
+}
+
 accordionButtons.forEach((accordionButton, index) => {
     accordionButton.addEventListener('click', function () {
-        for (let i = 0; i < accordionButtons.length; i++) {
-            accordionButtons[i].style.transform = 'translateY(0)';
-            accordionButtons[i].nextElementSibling.style.transform = 'translateY(100%)';
-        }
+        moveButtons(accordionButtons.length - 1);
 
         if (this.getAttribute('aria-expanded') == 'true') {
             hideContent(this);
@@ -189,15 +198,3 @@ accordionButtons.forEach((accordionButton, index) => {
         moveButtons(index);
     })
 })
-
-function moveButtons(index) {
-    for (let i = 0; i <= index; i++) {
-        accordionButtons[i].style.transform = 'translateY(0)';
-        accordionButtons[i].nextElementSibling.style.transform = 'translateY(100%)';
-    }
-    for (let i = index + 1; i < accordionButtons.length; i++) {
-        let activeTextHeight = accordionButtons[i].nextElementSibling.getBoundingClientRect().height;
-        accordionButtons[i].style.transform = `translateY(${activeTextHeight}px)`;
-        accordionButtons[i].nextElementSibling.style.transform = `translateY(calc(100% + ${activeTextHeight}px))`;
-    }
-}
