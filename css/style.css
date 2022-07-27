@@ -836,6 +836,7 @@ body {
   line-height: 1.75;
   font-weight: 300;
   color: #8c8c8c;
+  position: relative;
 }
 
 .mobile__advantage:not(:last-child) {
@@ -850,8 +851,13 @@ body {
   cursor: pointer;
   font: inherit;
   color: inherit;
+  text-align: left;
   margin-bottom: 5px;
   position: relative;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 .mobile__button::after {
@@ -893,12 +899,26 @@ body {
           transform: translate(calc(-50px + 80%), -63%) rotate(45deg);
 }
 
+.mobile__text {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .mobile__text[aria-hidden="true"] {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .mobile__text[aria-hidden="false"] {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 /* statistics */
