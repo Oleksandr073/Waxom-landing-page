@@ -1,5 +1,11 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
 
+    <!-- hero slider arrow -->
+
+    <symbol id="hero-arrow" viewBox="0 0 40 73">
+        <path d="M38.026,72.979 L0.005,36.498 L38.026,0.018 L39.995,2.022 L4.066,36.498 L39.995,70.977 L38.026,72.979 Z"/>
+    </symbol>
+
     <!-- arrow -->
 
     <symbol id="arrow" viewBox="0 0 24 24">

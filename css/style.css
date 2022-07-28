@@ -57,6 +57,8 @@ body {
 
 /* btn */
 .btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: inline-block;
   min-width: 170px;
   padding: 12px 25px;
@@ -229,6 +231,10 @@ body {
 
 /* hero */
 .hero {
+  position: relative;
+}
+
+.hero__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,8 +247,8 @@ body {
           justify-content: center;
   height: 100vh;
   min-height: 700px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../img/hero/hero_bg.jpg") center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/hero/hero_bg.jpg") center no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -273,6 +279,41 @@ body {
   margin-bottom: 40px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.hero__slide-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.hero__slide-button svg {
+  width: 40px;
+  height: 73px;
+  fill: #ffffff;
+  opacity: 0.5;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.hero__slide-button:hover svg, .hero__slide-button:focus svg {
+  opacity: 1;
+}
+
+.hero__slide-button--left {
+  left: 10%;
+}
+
+.hero__slide-button--right {
+  right: 10%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /* advantages */

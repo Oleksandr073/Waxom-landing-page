@@ -1,3 +1,16 @@
+// hero slider
+
+const heroSwiper = new Swiper('.hero', {
+    // simulateTouch: false,
+    speed: 400,
+    loop: true,
+    navigation: {
+        nextEl: '.hero__slide-button--right',
+        prevEl: '.hero__slide-button--left',
+    },
+});
+
+
 // projects cards filter
 const filterButtons = document.querySelectorAll('.projects__radio');
 const projectsCards = document.querySelectorAll('.projects__card');

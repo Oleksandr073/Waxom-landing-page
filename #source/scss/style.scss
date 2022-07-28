@@ -81,6 +81,7 @@ body {
 /* btn */
 
 .btn {
+    box-sizing: border-box;
     display: inline-block;
     min-width: 170px;
     padding: 12px 25px;
@@ -288,15 +289,39 @@ body {
 /* hero */
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    min-height: 700px;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/hero/hero_bg.jpg') center no-repeat;
-    background-size: cover;
     position: relative;
+
+    // .hero__slides
+
+    &__slides {}
+
+    // .hero__slide
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        min-height: 700px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: relative;
+
+        // &:nth-child(1) {
+        //     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/hero/hero_bg.jpg');
+        // }
+
+        // &:nth-child(2) {
+        //     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/hero/hero_bg_2.jpg');
+        // }
+
+        // &:nth-child(3) {
+        //     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/hero/hero_bg_3.jpg');
+        // }
+    }
 
     // .hero__container
 
@@ -341,6 +366,52 @@ body {
     // .hero__button
 
     &__button {}
+
+    // .hero__slide-button
+
+    &__slide-button {
+        // nulling styles of button
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        //
+
+        padding: 20px;
+
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+
+        svg {
+            width: 40px;
+            height: 73px;
+
+            fill: $whiteColor;
+            opacity: 0.5;
+
+            transition: $transitionFastEase;
+        }
+
+        &:hover,
+        &:focus {
+
+            svg{
+                opacity: 1;
+            }
+        }
+
+        &--left {
+            left: 10%;
+        }
+
+        &--right {
+            right: 10%;
+
+            transform: rotate(180deg);
+        }
+    }
 }
 
 /* advantages */
