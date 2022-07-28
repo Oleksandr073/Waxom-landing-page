@@ -1,5 +1,6 @@
 # Waxom landing page
-<p style="color:#39DF8C">#HTML&nbsp; &nbsp;#SCSS&nbsp; &nbsp;#JavaScript&nbsp; &nbsp;#landing-page</p>
+<!-- <p style="color:#39DF8C">#HTML&nbsp; &nbsp;#SCSS&nbsp; &nbsp;#JavaScript&nbsp; &nbsp;#landing-page</p> -->
+#HTML&nbsp; &nbsp;#SCSS&nbsp; &nbsp;#JavaScript&nbsp; &nbsp;#landing-page
 
 ## Made with 🛠️
 
@@ -9,17 +10,9 @@
 
 <img alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"/>
 
-
-
-___
-<br>
-
 ## Github Page 💻
 
 https://Oleksandr073.github.io/Waxom-landing-page/
-
-___
-<br>
 
 ## Template 👇
 <img alt="Visual Studio Code" width="100%" src="./Waxom%20Hemepage.jpg" />
