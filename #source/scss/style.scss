@@ -1871,3 +1871,110 @@ body {
 
     &__widget-photo {}
 }
+
+/* footer */ 
+
+.footer {
+    padding: 40px 0;
+
+    @include fontSizeLineHeight(13px, 20px);
+
+    color: $primaryColor;
+
+    background-color: #111111;
+
+    // .footer__container
+
+    &__container {
+        display: flex;
+    }
+
+    // .footer__copy
+
+    &__copy {
+        margin-right: 10px;
+        padding-right: 10px;
+
+        border-right: 1px solid #252525;
+    }
+
+    // .footer__copy-link
+
+    &__copy-link {
+        text-decoration: none;
+
+        color: #959595;
+
+        transition: $transitionFastEase;
+
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
+    }
+
+    // .footer__help
+
+    &__help {
+        display: flex;
+    }
+
+    // .footer__help-item
+
+    &__help-item {
+        
+        &:not(:last-child) {
+            margin-right: 10px;
+            padding-right: 10px;
+            border-right: 1px solid #252525;
+        }
+    }
+
+    // .footer__help-link
+
+    &__help-link {
+        text-decoration: none;
+
+        color: inherit;
+
+        transition: $transitionFastEase;
+
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+        display: flex;
+        margin-left: auto;
+    }
+
+    // .footer__info-item
+
+    &__info-item {
+
+        &:not(:last-child) {
+            margin-right: 10px;
+            padding-right: 10px;
+            border-right: 1px solid #252525;
+        }
+    }
+
+    // .footer__info-link
+
+    &__info-link {
+        text-decoration: none;
+
+        color: #959595;
+
+        transition: $transitionFastEase;
+
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
+    }
+}
