@@ -1217,7 +1217,7 @@ body {
 
 /* logos */
 .logos {
-  padding: 130px 30px;
+  padding: 130px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../img/logos/logo-bg.jpg") center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/logos/logo-bg.jpg") center no-repeat;
   background-size: cover;
@@ -1233,6 +1233,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 30px;
 }
 
 /* information */
@@ -1309,6 +1310,10 @@ body {
   transition: all 200ms ease;
 }
 
+.information__posts, .information__twitter, .information__widget {
+  padding-top: 25px;
+}
+
 .information__title {
   margin-bottom: 25px;
   font-family: 'Raleway', sans-serif;
@@ -1337,6 +1342,7 @@ body {
 }
 
 .information__posts-date {
+  display: inline-block;
   margin-bottom: 5px;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;

@@ -1580,7 +1580,7 @@ body {
 /* logos */ 
 
 .logos {
-    padding: 130px 30px;
+    padding: 130px 0;
 
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/logos/logo-bg.jpg') center no-repeat;
     background-size: cover;
@@ -1595,6 +1595,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 30px;
     }
 
     // .logos__item
@@ -1700,6 +1701,14 @@ body {
         }
     }
 
+    // 
+    
+    &__posts,
+    &__twitter,
+    &__widget {
+        padding-top: 25px;
+    }
+
     // .information__posts
 
     &__posts {}
@@ -1755,6 +1764,7 @@ body {
     // .information__posts-date
 
     &__posts-date {
+        display: inline-block;
         margin-bottom: 5px;
 
         transition: $transitionFastEase;
