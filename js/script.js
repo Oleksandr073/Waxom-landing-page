@@ -1,7 +1,7 @@
 // hero slider
 
 const heroSwiper = new Swiper('.hero', {
-    // simulateTouch: false,
+    simulateTouch: false,
     speed: 400,
     loop: true,
     navigation: {
