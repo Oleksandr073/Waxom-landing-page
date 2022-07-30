@@ -4,6 +4,7 @@ $accentColor: #c7b299;
 $primaryColor: #555555;
 $secondaryColor: #8c8c8c;
 $whiteColor: #ffffff;
+$buttonColor: #998675;
 $bgGradient: linear-gradient(to right, #211b19, #4e3427);
 $transitionFastEase: all 200ms ease;
 $transitionSlowEase: all 400ms ease;
@@ -94,7 +95,7 @@ body {
     color: $whiteColor;
     text-transform: uppercase;
 
-    background-color: #998675;
+    background-color: $buttonColor;
     box-shadow: 0 3px 0 0 #736357;
     border: 0;
     border-radius: 3px;
@@ -398,6 +399,7 @@ body {
         &:focus {
 
             svg{
+                fill: $accentColor;
                 opacity: 1;
             }
         }
@@ -652,8 +654,8 @@ body {
 
         &:checked + .projects__tab {
             color: $whiteColor;
-            border-color: #998675;
-            background-color: #998675;
+            border-color: $buttonColor;
+            background-color: $buttonColor;
         }
     }
 
@@ -678,8 +680,8 @@ body {
         &:hover,
         &:focus {
             color: $whiteColor;
-            border-color: #998675;
-            background-color: #998675;
+            border-color: $buttonColor;
+            background-color: $buttonColor;
         }
     }
 

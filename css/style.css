@@ -303,6 +303,7 @@ body {
 }
 
 .hero__slide-button:hover svg, .hero__slide-button:focus svg {
+  fill: #c7b299;
   opacity: 1;
 }
 

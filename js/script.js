@@ -1,5 +1,4 @@
 // hero slider
-
 const heroSwiper = new Swiper('.hero', {
     simulateTouch: false,
     speed: 400,
@@ -9,7 +8,6 @@ const heroSwiper = new Swiper('.hero', {
         prevEl: '.hero__slide-button--left',
     },
 });
-
 
 // projects cards filter
 const filterButtons = document.querySelectorAll('.projects__radio');
@@ -56,7 +54,7 @@ loadButton.addEventListener('click', function () { // load button shows all card
         hideCards(cards);
         this.innerHTML = 'Load More';
     }
-})
+});
 
 filterButtons.forEach(filterButton => { // filter buttons that show up to 6 cards according to the selected filter
     filterButton.addEventListener('change', function () {
@@ -70,7 +68,7 @@ filterButtons.forEach(filterButton => { // filter buttons that show up to 6 card
             hideCards(cards);
         }
     })
-})
+});
 
 // projects cards focus
 const links = document.querySelectorAll('.projects__link');
@@ -210,4 +208,4 @@ accordionButtons.forEach((accordionButton, index) => {
         showContent(this);
         moveButtons(index);
     })
-})
+});
