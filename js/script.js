@@ -100,19 +100,6 @@ const postsSwiper = new Swiper('.posts__container', {
     },
 });
 
-const postsAmount = document.querySelectorAll('.posts__card').length;
-const btnLeft = document.querySelector('.posts__btn--left');
-const btnRight = document.querySelector('.posts__btn--right');
-
-btnRight.classList.add('posts__btn--active');
-
-postsSwiper.on('slideChange', function() {
-    btnLeft.classList.add('posts__btn--active');
-    btnRight.classList.add('posts__btn--active');
-    if (this.activeIndex == 0) btnLeft.classList.remove('posts__btn--active');
-    if (this.activeIndex == postsAmount - slidesAmount) btnRight.classList.remove('posts__btn--active');
-});
-
 // videoplayer
 const video = document.querySelector('.videoplayer__video');
 const presentationContainer = document.querySelector('.presentation__container');

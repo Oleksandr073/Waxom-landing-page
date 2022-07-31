@@ -1,5 +1,6 @@
 *.psd
 range.css
+/sass
 
 #################################
 ### VS CODE + NODE + BRACKETS ###

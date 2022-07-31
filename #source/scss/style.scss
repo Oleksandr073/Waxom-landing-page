@@ -1579,7 +1579,7 @@ body {
         border: none;
         background: none;
         
-        cursor: not-allowed;
+        cursor: pointer;
         
         position: relative;
 
@@ -1595,9 +1595,9 @@ body {
             height: 22px;
             padding: 4px;
         
-            fill: #d1d1d1;
+            fill: $accentColor;
 
-            border: 1px solid #d1d1d1;
+            border: 1px solid $accentColor;
             border-radius: 50%;
         
             position: absolute;
@@ -1606,6 +1606,16 @@ body {
             z-index: 1;
             
             transition: $transitionFastEase;
+        }
+ 
+        &:not(:disabled):hover,
+        &:not(:disabled):focus { 
+            
+            svg {
+                fill: $whiteColor;
+
+                background-color: $accentColor;
+            }
         }
 
         // .posts__btn--left
@@ -1626,25 +1636,13 @@ body {
             }
         }
 
-        // .posts__btn--active
+        &:disabled {
+            cursor: not-allowed;
 
-        &--active {
-            cursor: pointer;
-            
             svg {
-                fill: $accentColor;
+                fill: #d1d1d1;
 
-                border-color: $accentColor;
-            }
-
-            &:hover,
-            &:focus { 
-                
-                svg {
-                    fill: $whiteColor;
-
-                    background-color: $accentColor;
-                }
+                border-color: #d1d1d1;
             }
         }
     }
