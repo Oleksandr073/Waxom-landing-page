@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // .nav__logo
+
+    &__logo {}
+
+    // .nav__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .nav__item
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    // .nav__link
+
+    &__link {
+        font-size: 14px;
+        text-transform: capitalize;
+        text-decoration: none;
+
+        color: $whiteColor;
+
+        transition: $transitionFastEase;
+
+        &:hover,
+        &:focus,
+        &.nav-link--active {
+            color: $accentColor;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.subtitle {
+    @include fontSizeLineHeight(16px, 28px);
+    font-weight: 300;
+
+    color: $secondaryColor;
+}

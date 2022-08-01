@@ -1,0 +1,33 @@
+.logo {
+    // width: 64px;
+    // height: 56px;
+    display: flex;
+    align-items: center;
+
+    font-size: 34px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    line-height: inherit;
+
+    color: white;
+
+    transition: $transitionFastEase;
+
+    svg {
+        width: 64px;
+        height: 56px;
+
+        fill: $whiteColor;
+
+        transition: $transitionFastEase;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+
+        svg {
+            fill: $accentColor;
+        }
+    }
+}

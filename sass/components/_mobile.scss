@@ -1,0 +1,142 @@
+.mobile {
+    padding-top: 75px;
+
+    // .mobile__container
+
+    &__container {
+        display: flex;
+        align-items: flex-end;
+        // padding-top: 75px;
+    }
+
+    // .mobile__photo
+
+    &__photo {
+        display: block;
+        // align-self: flex-end;
+        margin-right: 30px;
+    }
+
+    // .mobile__content
+
+    &__content {
+        // padding-top: 110px;
+        padding-bottom: 170px;
+    }
+
+    // .mobile__title
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    // .mobile__subtitle
+
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
+    // .mobile__advantages
+
+    &__advantages {
+        padding-left: 90px;
+    }
+
+    // .mobile__advantage
+
+    &__advantage {
+        @include fontSizeLineHeight(16px, 28px);
+        font-weight: 300;
+
+        color: $secondaryColor;
+
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .mobile__button
+
+    &__button {
+        // nulling styles of button
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font: inherit;
+        color: inherit;
+        text-align: left;
+        //
+
+        position: relative;
+        z-index: 2;
+
+        transition: $transitionSlowEase;
+
+        svg {
+            // arrow
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            padding: 4px;
+
+            fill: $whiteColor;
+
+            background-color: $accentColor;
+            border-radius: 50%;
+
+            position: absolute;
+            top: 0;
+            left: -50px;
+            z-index: 2;
+
+            transition: $transitionSlowEase;
+        }
+
+        &[aria-expanded="true"] {
+
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    // .mobile__text
+
+    &__text {
+        transition: $transitionSlowEase;
+
+        overflow: hidden;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+
+        p {
+            padding: 10px 0;
+            transition: $transitionSlowEase;
+        }
+
+        &[aria-hidden="true"] {
+
+            p {
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+
+        &[aria-hidden="false"] {
+
+            p {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

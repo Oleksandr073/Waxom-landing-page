@@ -1,0 +1,35 @@
+.logos {
+    padding: 130px 0;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../img/logos/logo-bg.jpg') center no-repeat;
+    background-size: cover;
+
+    // .logos__container
+
+    &__container {}
+
+    // .logos__items
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    // .logos__item
+
+    &__item {}
+
+    // .logos__link
+
+    &__link {}
+
+    // .logos__logo
+
+    &__logo {}
+
+    // .logos__icon
+
+    &__icon {}
+}
