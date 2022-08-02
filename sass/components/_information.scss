@@ -65,18 +65,20 @@
             color: $accentColor;
 
             &::after {
-                border-color: transparent transparent transparent $accentColor;
+                // border-color: transparent transparent transparent $accentColor;
+                @include triangleHover($accentColor, right);
             }
         }
 
         &::after {
             content: '';
-            width: 0;
-            height: 0;
+            // width: 0;
+            // height: 0;
             margin-left: 8px;
-            border-style: solid;
-            border-width: 4px 0 4px 5px;
-            border-color: transparent transparent transparent #d1d1d1;
+            // border-style: solid;
+            // border-width: 4px 0 4px 5px;
+            // border-color: transparent transparent transparent #d1d1d1;
+            @include triangle(#d1d1d1, right, 5px, 8px);
 
             transition: $transitionFastEase;
         }

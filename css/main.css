@@ -1170,9 +1170,9 @@ body {
 
 .posts__read::after {
   content: '';
+  margin-left: 8px;
   width: 0;
   height: 0;
-  margin-left: 8px;
   border-style: solid;
   border-width: 4px 0 4px 5px;
   border-color: transparent transparent transparent #c7b299;
@@ -1323,9 +1323,9 @@ body {
 
 .information__read::after {
   content: '';
+  margin-left: 8px;
   width: 0;
   height: 0;
-  margin-left: 8px;
   border-style: solid;
   border-width: 4px 0 4px 5px;
   border-color: transparent transparent transparent #d1d1d1;

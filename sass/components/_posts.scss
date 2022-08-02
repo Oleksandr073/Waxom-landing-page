@@ -169,18 +169,20 @@
             color: $whiteColor;
 
             &::after {
-                border-color: transparent transparent transparent $whiteColor;
+                // border-color: transparent transparent transparent $whiteColor;
+                @include triangleHover($whiteColor, right);
             }
         }
 
         &::after {
             content: '';
-            width: 0;
-            height: 0;
+            // width: 0;
+            // height: 0;
             margin-left: 8px;
-            border-style: solid;
-            border-width: 4px 0 4px 5px;
-            border-color: transparent transparent transparent $accentColor;
+            // border-style: solid;
+            // border-width: 4px 0 4px 5px;
+            // border-color: transparent transparent transparent $accentColor;
+            @include triangle($accentColor, right, 5px, 8px);
 
             transition: $transitionFastEase;
         }

@@ -108,7 +108,8 @@
             .projects__info {
 
                 &::before {
-                    border-color: transparent transparent #362f2d transparent;
+                    // border-color: transparent transparent #362f2d transparent;
+                    @include triangleHover(#362f2d, top);
                 }
             }
 
@@ -139,7 +140,8 @@
         .projects__info {
 
             &::before {
-                border-color: transparent transparent #362f2d transparent;
+                // border-color: transparent transparent #362f2d transparent;
+                @include triangleHover(#362f2d, top);
             }
         }
 
@@ -240,12 +242,14 @@
         &::before {
             content: '';
             display: block;
-            width: 0;
-            height: 0;
+            // width: 0;
+            // height: 0;
 
-            border-style: solid;
-            border-width: 0 15px 10px 15px;
-            border-color: transparent transparent $whiteColor transparent;
+            // border-style: solid;
+            // border-width: 0 15px 10px 15px;
+            // border-color: transparent transparent $whiteColor transparent;
+
+            @include triangle($whiteColor, top, 30px, 10px);
 
             transition: $transitionFastEase;
 
