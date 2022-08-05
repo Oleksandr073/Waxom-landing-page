@@ -1,27 +1,25 @@
 .mobile {
-    padding-top: 75px;
+    // padding-top: 75px;
 
     // .mobile__container
 
     &__container {
-        display: flex;
-        align-items: flex-end;
-        // padding-top: 75px;
-    }
+        // padding-top: 190px;
+        // padding-bottom: 170px;
+        padding: 170px 0;
 
-    // .mobile__photo
-
-    &__photo {
-        display: block;
-        // align-self: flex-end;
-        margin-right: 30px;
+        background-image: url('../img/mobile/iPhone-in-hand.png');
+        background-repeat: no-repeat;
+        background-position: 30px bottom;
     }
 
     // .mobile__content
 
     &__content {
+        width: 60%;
+        margin-left: auto;
         // padding-top: 110px;
-        padding-bottom: 170px;
+        // padding-bottom: 170px;
     }
 
     // .mobile__title

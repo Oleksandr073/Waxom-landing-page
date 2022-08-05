@@ -846,26 +846,16 @@ body {
   color: #ffffff;
 }
 
-.mobile {
-  padding-top: 75px;
-}
-
 .mobile__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.mobile__photo {
-  display: block;
-  margin-right: 30px;
+  padding: 170px 0;
+  background-image: url("../img/mobile/iPhone-in-hand.png");
+  background-repeat: no-repeat;
+  background-position: 30px bottom;
 }
 
 .mobile__content {
-  padding-bottom: 170px;
+  width: 60%;
+  margin-left: auto;
 }
 
 .mobile__title {
