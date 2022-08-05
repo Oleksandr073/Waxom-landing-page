@@ -279,19 +279,20 @@ body {
 }
 
 .hero__pagination .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
   opacity: 1;
   border: 2px solid transparent;
   background-color: rgba(255, 255, 255, 0.5);
-  background-clip: padding-box;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 
 .hero__pagination .swiper-pagination-bullet-active {
-  border: 2px solid #c7b299;
+  border-color: #c7b299;
   background-color: rgba(255, 255, 255, 0);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .hero__slide-button {
