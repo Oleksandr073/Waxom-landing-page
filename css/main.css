@@ -273,6 +273,27 @@ body {
   line-height: 1.5;
 }
 
+.hero__pagination {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.hero__pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.hero__pagination .swiper-pagination-bullet-active {
+  border: 2px solid #c7b299;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 .hero__slide-button {
   margin: 0;
   padding: 0;
@@ -920,9 +941,6 @@ body {
   padding: 10px 0;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
-}
-
-.mobile__text[aria-hidden="true"] p {
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translateY(-100%);

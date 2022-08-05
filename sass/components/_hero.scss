@@ -77,6 +77,33 @@
 
     &__button {}
 
+    // .hero__pagination 
+
+    &__pagination {
+        // bottom: 40px !important;
+        transform: translateY(-30px);
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+
+            opacity: 1;
+
+            border: 2px solid transparent;
+
+            background-color: rgba(255, 255, 255, 0.5);
+            background-clip: padding-box;
+
+            transition: all 400ms ease;
+        } 
+
+        .swiper-pagination-bullet-active {
+            border: 2px solid $accentColor;
+
+            background-color: rgba(255, 255, 255, 0);
+        }
+    }
+
     // .hero__slide-button
 
     &__slide-button {

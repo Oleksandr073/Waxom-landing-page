@@ -119,15 +119,10 @@
         p {
             padding: 10px 0;
             transition: $transitionSlowEase;
-        }
 
-        &[aria-hidden="true"] {
-
-            p {
-                visibility: hidden;
-                opacity: 0;
-                transform: translateY(-100%);
-            }
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
         }
 
         &[aria-hidden="false"] {

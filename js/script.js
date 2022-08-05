@@ -7,6 +7,11 @@ const heroSwiper = new Swiper('.hero', {
         nextEl: '.hero__slide-button--right',
         prevEl: '.hero__slide-button--left',
     },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
 });
 
 // projects cards filter
