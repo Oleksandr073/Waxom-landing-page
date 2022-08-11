@@ -93,11 +93,9 @@ cards.forEach(card => card.addEventListener('focus', () => {
 }));
 
 // swiper slider posts
-let slidesAmount = 3;
-
 const postsSwiper = new Swiper('.posts__container', {
     simulateTouch: false,
-    slidesPerView: slidesAmount,
+    slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
         nextEl: '.posts__btn--right',
