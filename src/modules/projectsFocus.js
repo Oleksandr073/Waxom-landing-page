@@ -17,4 +17,4 @@ function projectsFocus() {
     }));
 }
 
-module.exports = projectsFocus;
+export default projectsFocus;

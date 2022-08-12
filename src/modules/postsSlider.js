@@ -11,4 +11,4 @@ function postsSlider() {
     });
 }
 
-module.exports = postsSlider;
+export default postsSlider;

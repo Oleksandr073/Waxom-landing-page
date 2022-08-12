@@ -61,4 +61,4 @@ function projectsFilter() {
     });
 }
 
-module.exports = projectsFilter;
+export default projectsFilter;

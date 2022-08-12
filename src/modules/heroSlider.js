@@ -16,4 +16,4 @@ function heroSlider() {
     });
 }
 
-module.exports = heroSlider;
+export default heroSlider;

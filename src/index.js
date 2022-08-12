@@ -1,9 +1,9 @@
-const heroSlider = require('./modules/heroSlider');
-const projectsFilter = require('./modules/projectsFilter');
-const projectsFocus = require('./modules/projectsFocus');
-const postsSlider = require('./modules/postsSlider');
-const videoplayer = require('./modules/videoplayer');
-const mobileAccordion = require('./modules/mobileAccordion');
+import heroSlider from './modules/heroSlider';
+import projectsFilter from './modules/projectsFilter';
+import projectsFocus from './modules/projectsFocus';
+import postsSlider from './modules/postsSlider';
+import videoplayer from './modules/videoplayer';
+import mobileAccordion from './modules/mobileAccordion';
 
 heroSlider();
 projectsFilter();

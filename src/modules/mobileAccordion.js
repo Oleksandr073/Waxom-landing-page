@@ -45,4 +45,4 @@ function mobileAccordion() {
     });
 }
 
-module.exports = mobileAccordion;
+export default mobileAccordion;

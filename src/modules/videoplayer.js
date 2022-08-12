@@ -52,4 +52,4 @@ function videoplayer() {
     });
 }
 
-module.exports = videoplayer;
+export default videoplayer;
