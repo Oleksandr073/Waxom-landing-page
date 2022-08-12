@@ -1,0 +1,24 @@
+{
+  "name": "11_waxom",
+  "version": "1.0.0",
+  "description": "<!-- <p style=\"color:#39DF8C\">#HTML&nbsp; &nbsp;#SCSS&nbsp; &nbsp;#JavaScript&nbsp; &nbsp;#landing-page</p> -->\r #HTML&nbsp; &nbsp;#SCSS&nbsp; &nbsp;#JavaScript&nbsp; &nbsp;#landing-page",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleksandr073/Waxom-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oleksandr073/Waxom-landing-page/issues"
+  },
+  "homepage": "https://github.com/Oleksandr073/Waxom-landing-page#readme",
+  "dependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
