@@ -2,6 +2,18 @@
 function mobileAccordion() {
     const accordionButtons = document.querySelectorAll('.mobile__button');
 
+    function setPaddingBottomAccordionWrapper() {
+        const accordionTexts = document.querySelectorAll('.mobile__text');
+        const maxHeightOfText =
+            Math.max(...Array.from(accordionTexts)
+                .map(accordionText => accordionText.scrollHeight));
+
+        const accordionWrapper = document.querySelector('.mobile__advantages');
+        accordionWrapper.style.paddingBottom = maxHeightOfText + 5 + 'px';
+    }
+
+    setPaddingBottomAccordionWrapper();
+
     function hideContent(button) {
         button.setAttribute('aria-expanded', 'false');
         button.setAttribute('title', 'Show content');
