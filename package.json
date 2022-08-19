@@ -4,8 +4,9 @@
   "description": "<!-- <p style=\"color:#39DF8C\">#HTML&nbsp; &nbsp;#SCSS&nbsp; &nbsp;#JavaScript&nbsp; &nbsp;#landing-page</p> -->\r #HTML&nbsp; &nbsp;#SCSS&nbsp; &nbsp;#JavaScript&nbsp; &nbsp;#landing-page",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx webpack"
+    "dev": "npx webpack --mode development",
+    "watch": "npx webpack --mode development --watch",
+    "build": "npx webpack --mode production"
   },
   "repository": {
     "type": "git",
