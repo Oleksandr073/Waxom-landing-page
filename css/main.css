@@ -847,7 +847,8 @@ body {
 }
 
 .mobile__container {
-  padding: 170px 0;
+  padding-top: 170px;
+  padding-bottom: 100px;
   background-image: url("../img/mobile/iPhone-in-hand.png");
   background-repeat: no-repeat;
   background-position: 30px bottom;
