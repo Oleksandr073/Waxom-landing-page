@@ -1,18 +1,4 @@
-// colors
-$accentColor: #c7b299;
-$primaryColor: #555555;
-$secondaryColor: #8c8c8c;
-$whiteColor: #ffffff;
-$buttonColor: #998675;
-
-// gradient
-$bgGradient: linear-gradient(to right, #211b19, #4e3427);
-
-// transition
-$transitionFastEase: all 200ms ease;
-$transitionSlowEase: all 400ms ease;
-
-// breakpoints
-$small: 576px;
-$medium: 768px;
-$large: 992px;
+@import 'variables/colors';
+@import 'variables/gradients';
+@import 'variables/transitions';
+@import 'variables/breakpoints';
